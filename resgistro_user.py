@@ -12,6 +12,6 @@ if newUser != dataBase:
         
     else:
         print("lo siento la contrasena supera los 8 caracteres")
-   
+    
 else:
     print(f"Lo siento el nombre {newUser} No esta disponible")
