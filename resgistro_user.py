@@ -8,7 +8,13 @@ if newUser != dataBase:
     user_pass=input("Crea una nueva 8 caracteres maximo\ncontrasena: ")
     if len [user_pass] < 8:
         #Submodulo 2.1 segunda validacion de la contrsena
-        print("Por favor vuelva esvrivir la contrasna:")
+        sameUserPass=int(input("Por favor vuelva esvrivir la contrasna:"))
+        
+        if user_pass != sameUserPass:
+            print("lo siento las contrasnias con coinciden, vuelva a intentarlo")
+        else:
+            print("El registro de usuario ha sido exitoso")
+        
         
     else:
         print("lo siento la contrasena supera los 8 caracteres")
